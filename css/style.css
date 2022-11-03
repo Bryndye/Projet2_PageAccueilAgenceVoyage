@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Raleway-Black';
+    src: url(fonts/Raleway/Raleway-Black.ttf);
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+h2{
+    color: #0065FC;
+    font-family: 'Raleway-Black', Impact, Arial;
+    background-color: #DEEBFF;
+}
+
+p{
+    color: black;
+}
+
+.filter_bar i{
+    color: #0065FC;
+}

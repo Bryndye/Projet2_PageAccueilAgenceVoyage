@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Page Accueil</title>
+        
+        <script src="https://kit.fontawesome.com/9716f2641e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <!--Nous avons convenu avec le designer UI d’utiliser 992 px et 768 px
+    ● >=992 px pour les écrans d’ordinateurs
+    ● >=768 px pour les tablettes
+    ● et tout ce qui est en dessous de 768 pour les téléphones portables
+    largeur maximum = 1400px-->
+    <header>
+        <!--https://fontawesome.com/kits/9716f2641e/use?welcome=yes-->
+        <i class="fa-solid fa-stopwatch-20"></i>
+        <nav>
+            <img src="images/Images Booki/logo/Booki.png">
+            <ul>
+                <li><a href="#hebergement">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <section class="recherche">
+            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+
+            <div><!--barre de recherche-->
+                <i class="fa-solid fa-location-dot"></i>
+                <input>
+                <button type = "button">Rechercher</button>
+            </div>
+
+            <div class="filter_bar">
+                <h2>Filtre</h2>
+                <ul>
+                    <li class="filtre"> <button type = "button"><i class="fa-solid fa-money-bill-wave"></i> Economique</button></li>
+                    <li class="filtre"> <button type = "button"><i class="fa-solid fa-person"></i> Familial</button></li>
+                    <li class="filtre"> <button type = "button"><i class="fa-solid fa-heart"></i> Romantique</button></li>
+                    <li class="filtre"> <button type = "button"><i class="fa-solid fa-dog"></i> Animaux autorisés</button></li>
+                </ul> 
+            </div>
+
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+
+        </section>
+
+        <section name = "hebergement">
+            <div> <!--hebergement marseille-->
+                <h1>Hébergements à Marseille</h1>
+                <div></div><!--Liste bloc hebergements-->
+                <p>Afficher plus</p>
+            </div>
+
+            <aside><!--hebergement populaire-->
+                <h2>Les plus populaires</h2>
+                <div></div><!--Liste bloc hebergements-->
+            </aside>
+
+        </section>
+
+        <section name = "#activites"> <!--activites populaires-->
+            <h1>Activités à Marseilles</h1>
+        </section>
+
+    </body>
+
+    <footer>
+        <!--elements en colonnes-->
+        <div class = "colonne_footer">
+            <h3>A propos</h3>
+            <a href="#">Fonctionnement du site</a>
+            <a href="#">Condition générales</a>
+            <a href="#">Données confidentialité</a>
+        </div>
+        <div class = "colonne_footer">
+            <h3>Nos hébgergements</h3>
+            <a href="#">Charte qualité</a>
+            <a href="#">Porposer votre hôtel</a>
+        </div>
+        <div class = "colonne_footer">
+            <h3>Assistance</h3>
+            <a href="#">Centre d'aide</a>
+            <a href="#">Nous contacter</a>
+        </div>
+    </footer>
+
+</html>
