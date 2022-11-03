@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
         <title>Page Accueil</title>
-        
+
+        <!--!--https://fontawesome.com/kits/9716f2641e/use?welcome=yes-->
         <script src="https://kit.fontawesome.com/9716f2641e.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -12,19 +13,18 @@
     ● >=768 px pour les tablettes
     ● et tout ce qui est en dessous de 768 pour les téléphones portables
     largeur maximum = 1400px-->
-    <header>
-        <!--https://fontawesome.com/kits/9716f2641e/use?welcome=yes-->
-        <i class="fa-solid fa-stopwatch-20"></i>
-        <nav>
-            <img src="images/Images_Booki/logo/Booki.png">
-            <ul>
-                <li><a href="#hebergement">Hébergements</a></li>
-                <li><a href="#activites">Activités</a></li>
-            </ul>
-        </nav>
-    </header>
 
     <body>
+        <header>
+            <nav>
+                <img id = "logo" src="images/Images_Booki/logo/Booki.png" alt="logo Booki">
+                <div id = "nav">
+                    <a href="#hebergement">Hébergements</a>
+                    <a href="#activites">Activités</a>
+                </div>
+            </nav>
+        </header>
+
         <section class="recherche">
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
@@ -52,41 +52,81 @@
         <section id = "hebergement">
             <div> <!--hebergement marseille-->
                 <h1>Hébergements à Marseille</h1>
-                <div></div><!--Liste bloc hebergements-->
+
+                <section id = "bloc_hebergement"> <!--Bloc hebergements-->
+                    <div class = "card">
+                        <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
+                        <div>
+                            <h3>Aubger La Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i id = "grey_star" class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <p>Afficher plus</p>
             </div>
 
-            <aside><!--hebergement populaire-->
+            <section id = "bloc_hebergement_populaire"><!--hebergement populaire-->
                 <h2>Les plus populaires</h2>
-                <div></div><!--Liste bloc hebergements-->
-            </aside>
+                <i class="fa-solid fa-chart-line"></i>
+                <!--Liste bloc hebergements-->
+                <section>
+                    <div class = "card">
+                        <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
+                        <div>
+                            <h3>Aubger La Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i id = "grey_star" class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
 
         </section>
 
-        <section id = "#activites"> <!--activites populaires-->
+        <section id = "bloc_activites"> <!--activites populaires-->
             <h1>Activités à Marseilles</h1>
+            <section>
+                <div class = "activite">
+                    <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
+                    <h3>Aubger La Cannebière</h3>
+                </div>
+            </section>
         </section>
+
+        <footer>
+            <!--elements en colonnes-->
+            <div class = "colonne_footer">
+                <h3>A propos</h3>
+                <a href="#">Fonctionnement du site</a>
+                <a href="#">Condition générales</a>
+                <a href="#">Données confidentialité</a>
+            </div>
+            <div class = "colonne_footer">
+                <h3>Nos hébgergements</h3>
+                <a href="#">Charte qualité</a>
+                <a href="#">Porposer votre hôtel</a>
+            </div>
+            <div class = "colonne_footer">
+                <h3>Assistance</h3>
+                <a href="#">Centre d'aide</a>
+                <a href="#">Nous contacter</a>
+            </div>
+        </footer>
 
     </body>
-
-    <footer>
-        <!--elements en colonnes-->
-        <div class = "colonne_footer">
-            <h3>A propos</h3>
-            <a href="#">Fonctionnement du site</a>
-            <a href="#">Condition générales</a>
-            <a href="#">Données confidentialité</a>
-        </div>
-        <div class = "colonne_footer">
-            <h3>Nos hébgergements</h3>
-            <a href="#">Charte qualité</a>
-            <a href="#">Porposer votre hôtel</a>
-        </div>
-        <div class = "colonne_footer">
-            <h3>Assistance</h3>
-            <a href="#">Centre d'aide</a>
-            <a href="#">Nous contacter</a>
-        </div>
-    </footer>
 
 </html>
