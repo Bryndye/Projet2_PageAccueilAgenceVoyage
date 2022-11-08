@@ -16,12 +16,10 @@
 
     <body>
         <header>
+            <img id = "logo" src="images/Images_Booki/logo/Booki.png" alt="logo Booki">
             <nav>
-                <img id = "logo" src="images/Images_Booki/logo/Booki.png" alt="logo Booki">
-                <div id = "nav_buton">
-                    <a href="#hebergement">Hébergements</a>
-                    <a href="#activites">Activités</a>
-                </div>
+                <a href="#hebergement">Hébergements</a>
+                <a href="#bloc_activites">Activités</a>
             </nav>
         </header>
 
@@ -29,23 +27,24 @@
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
 
-            <div><!--barre de recherche-->
+            <div class="bar_recherche"><!--barre de recherche-->
                 <i class="fa-solid fa-location-dot"></i>
-                <input>
+                <input placeholder="Marseille, France">
                 <button type = "button">Rechercher</button>
             </div>
 
             <div class="filter_bar">
-                <h2>Filtre</h2>
-                <ul>
-                    <li class="filtre"> <button type = "button"><i class="fa-solid fa-money-bill-wave"></i> Economique</button></li>
-                    <li class="filtre"> <button type = "button"><i class="fa-solid fa-person"></i> Familial</button></li>
-                    <li class="filtre"> <button type = "button"><i class="fa-solid fa-heart"></i> Romantique</button></li>
-                    <li class="filtre"> <button type = "button"><i class="fa-solid fa-dog"></i> Animaux autorisés</button></li>
-                </ul> 
+                <h2>Filtres</h2>
+                <div id = "bloc_butons_filtre">
+                    <button type = "button" class="filtre"><i class="fa-solid fa-money-bill-wave"></i> Economique</button>
+                    <button type = "button" class="filtre"><i class="fa-solid fa-person"></i> Familial</button>
+                    <button type = "button" class="filtre"><i class="fa-solid fa-heart"></i> Romantique</button>
+                    <button type = "button" class="filtre"><i class="fa-solid fa-dog"></i> Animaux autorisés</button> 
+                </div>          
             </div>
 
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            
+            <p><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 
         </section>
 
@@ -110,23 +109,28 @@
         <footer>
             <!--elements en colonnes-->
             <div class = "colonne_footer">
-                <h3>A propos</h3>
-                <a href="#">Fonctionnement du site</a>
-                <a href="#">Condition générales</a>
-                <a href="#">Données confidentialité</a>
+                <h2>A propos</h3>
+                <div class="links">
+                     <a href="#">Fonctionnement du site</a>
+                     <a href="#">Condition générales</a>
+                    <a href="#">Données confidentialité</a>
+                </div>
             </div>
             <div class = "colonne_footer">
-                <h3>Nos hébgergements</h3>
-                <a href="#">Charte qualité</a>
-                <a href="#">Porposer votre hôtel</a>
+                <h2>Nos hébgergements</h3>
+                <div class="links">                  
+                    <a href="#">Charte qualité</a>
+                    <a href="#">Porposer votre hôtel</a>
+                </div>
+
             </div>
             <div class = "colonne_footer">
-                <h3>Assistance</h3>
-                <a href="#">Centre d'aide</a>
-                <a href="#">Nous contacter</a>
+                <h2>Assistance</h3>
+                <div class="links">
+                    <a href="#">Centre d'aide</a>
+                    <a href="#">Nous contacter</a>          
+                </div>
             </div>
         </footer>
-
     </body>
-
 </html>

@@ -24,39 +24,68 @@ body{
 header{
     height: 100px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-a :hover{
-    border-top: black 10px;
-    background-color: pink;
-}
-
 nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 30px;
-
-    /*background-color: green;*/
-}
-
-#nav_buton{
     display: flex;
     justify-content: space-between;
     width: 15%;
-    /*background-color: pink;*/
+    margin-right: 30px;
 }
 
 
-.recherche{
-    background-color: red;
+
+.bar_recherche{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.bar_recherche i{
+    width: 50px;
+    background-color: #D9D9D9;
+    border-radius: 20px 0 0 20px;
+    border-width: 5px;
+}
+.bar_recherche input{
+    font-family: 'Raleway-Bold';
+}
+.bar_recherche button{
+    color: white;
+    background-color: #0065FC;
+    font-family: 'Raleway-Bold';
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px 15px;
 }
 
 .filter_bar{
-    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+#bloc_butons_filtre{
+    display: flex;
+    flex-direction: row;
+}
+
+.filtre{
+    width: auto;
+    height: 50px;
+    border-radius: 30px;
+    margin-left: 20px;
+    font-family: 'Raleway-Bold';
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-color: #D9D9D9;
+    /*background-color: #DEEBFF; quand active*/
+}
+.filter_bar i{
+    color: #0065FC;
+}
 
 #hebergement{
     background-color: blue;
@@ -111,6 +140,9 @@ footer{
     flex-direction: column;
     margin-right: 20%;
 }
+.links{
+    margin-top: 5px;
+}
 
 
 
@@ -127,7 +159,7 @@ h1{
 }
 
 h2{
-    color: #0065FC;
+    color: black;
     font-family: 'Raleway-Bold', Impact, Arial;
 }
 
@@ -135,9 +167,18 @@ p{
     color: black;
 }
 
-.filter_bar i{
+a{
+    text-decoration: none;
+    font-family: 'Raleway';
+    color: black;
+}
+a:hover{
+    border-top: 10px solid #0065FC ;
+}
+a:active{
     color: #0065FC;
 }
+
 
 #grey_star{
     color: #D9D9D9;
