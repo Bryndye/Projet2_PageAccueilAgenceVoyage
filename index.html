@@ -4,9 +4,12 @@
         <meta charset="utf-8">
         <title>Page Accueil</title>
 
-        <!--!--https://fontawesome.com/kits/9716f2641e/use?welcome=yes-->
+        <!--https://fontawesome.com/kits/9716f2641e/use?welcome=yes-->
         <script src="https://kit.fontawesome.com/9716f2641e.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> <!--CDN-->
     </head>
     <!--Nous avons convenu avec le designer UI d’utiliser 992 px et 768 px
     ● >=992 px pour les écrans d’ordinateurs
@@ -23,38 +26,61 @@
             </nav>
         </header>
 
-        <section class="recherche">
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
+        <main>
+            <section class="recherche">
+                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
 
-            <div class="bar_recherche"><!--barre de recherche-->
-                <i class="fa-solid fa-location-dot"></i>
-                <input placeholder="Marseille, France">
-                <button type = "button">Rechercher</button>
-            </div>
+                <form class="bar_recherche"><!--barre de recherche-->
+                    <i id="icon_looking" class="fa-solid fa-location-dot"></i>
+                    <input placeholder="Marseille, France">
+                    <button type = "button">Rechercher</button>
+                </form>
 
-            <div class="filter_bar">
-                <h2>Filtres</h2>
-                <div id = "bloc_butons_filtre">
-                    <button type = "button" class="filtre"><i class="fa-solid fa-money-bill-wave"></i> Economique</button>
-                    <button type = "button" class="filtre"><i class="fa-solid fa-person"></i> Familial</button>
-                    <button type = "button" class="filtre"><i class="fa-solid fa-heart"></i> Romantique</button>
-                    <button type = "button" class="filtre"><i class="fa-solid fa-dog"></i> Animaux autorisés</button> 
-                </div>          
-            </div>
+                <div class="filter_bar">
+                    <h2>Filtres</h2>
+                    <div id = "bloc_butons_filtre">
+                        <button type = "button" class="filtre"><i class="fa-solid fa-money-bill-wave"></i> Economique</button>
+                        <button type = "button" class="filtre"><i class="fa-solid fa-person"></i> Familial</button>
+                        <button type = "button" class="filtre"><i class="fa-solid fa-heart"></i> Romantique</button>
+                        <button type = "button" class="filtre"><i class="fa-solid fa-dog"></i> Animaux autorisés</button> 
+                    </div>          
+                </div>
 
             
-            <p><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                <p><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 
-        </section>
+            </section>
 
         <section id = "hebergement">
             <div> <!--hebergement marseille-->
                 <h1>Hébergements à Marseille</h1>
 
-                <section id = "bloc_hebergement"> <!--Bloc hebergements-->
-                    <div class = "card">
-                        <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
+                <div id = "bloc_hebergement"> <!--Bloc hebergements-->
+                    <div class = "raw_1">
+                        <article class="card">
+                            <figure>
+                                <figcaption>
+                                    <h2>Aubger La Cannebière</h2>
+                                </figcaption>
+                            </figure>
+                            <!-- <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
+                            <div>
+                                <h3>Aubger La Cannebière</h3>
+                                <p>Nuit à partir de 25€</p>
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div> -->
+                        </article>
+                        
+                    </div>
+                    <div class = "raw_2">
+                        <!-- <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
                         <div>
                             <h3>Aubger La Cannebière</h3>
                             <p>Nuit à partir de 25€</p>
@@ -63,16 +89,16 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i id = "grey_star" class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
-                </section>
+                </div>
 
                 <p>Afficher plus</p>
             </div>
 
-            <section id = "bloc_hebergement_populaire"><!--hebergement populaire-->
+            <aside id = "bloc_hebergement_populaire"><!--hebergement populaire-->
                 <h2>Les plus populaires</h2>
                 <i class="fa-solid fa-chart-line"></i>
                 <!--Liste bloc hebergements-->
@@ -82,17 +108,17 @@
                         <div>
                             <h3>Aubger La Cannebière</h3>
                             <p>Nuit à partir de 25€</p>
-                            <div>
+                            <div id="zone_etoile">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i id = "grey_star" class="fa-solid fa-star"></i>
+                                <span class="grey_star"><i class="fa-solid fa-star"></i></span>
                             </div>
                         </div>
                     </div>
                 </section>
-            </section>
+            </aside>
 
         </section>
 
@@ -109,7 +135,7 @@
         <footer>
             <!--elements en colonnes-->
             <div class = "colonne_footer">
-                <h2>A propos</h3>
+                <h2>A propos</h2>
                 <div class="links">
                      <a href="#">Fonctionnement du site</a>
                      <a href="#">Condition générales</a>
@@ -117,7 +143,7 @@
                 </div>
             </div>
             <div class = "colonne_footer">
-                <h2>Nos hébgergements</h3>
+                <h2>Nos hébgergements</h2>
                 <div class="links">                  
                     <a href="#">Charte qualité</a>
                     <a href="#">Porposer votre hôtel</a>
@@ -125,12 +151,13 @@
 
             </div>
             <div class = "colonne_footer">
-                <h2>Assistance</h3>
+                <h2>Assistance</h2>
                 <div class="links">
                     <a href="#">Centre d'aide</a>
                     <a href="#">Nous contacter</a>          
                 </div>
             </div>
         </footer>
+    </main>
     </body>
 </html>

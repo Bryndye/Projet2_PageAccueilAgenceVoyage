@@ -1,23 +1,7 @@
-@font-face {
-    font-family: 'Raleway-Bold';
-    src: url('../fonts/Raleway-Bold.woff2') format('woff2'),
-        url('../fonts/Raleway-Bold.woff') format('woff');
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Light.woff2') format('woff2'),
-        url('../fonts/Raleway-Light.woff') format('woff');
-    font-style: normal;
-    font-display: swap;
-}
-
 body{
     background-color: #F2F2F2;
     padding : 10px 30px 0 30px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -41,15 +25,18 @@ nav{
     height: 50px;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .bar_recherche i{
+    height: 100%;
     width: 50px;
     background-color: #D9D9D9;
     border-radius: 20px 0 0 20px;
     border-width: 5px;
 }
 .bar_recherche input{
-    font-family: 'Raleway-Bold';
+    height: 100%;
+    font-family: 'Raleway';
 }
 .bar_recherche button{
     color: white;
@@ -76,7 +63,6 @@ nav{
     height: 50px;
     border-radius: 30px;
     margin-left: 20px;
-    font-family: 'Raleway-Bold';
     display: flex;
     align-items: center;
     border-style: solid;
@@ -155,12 +141,10 @@ footer{
 
 h1{
     color : black;
-    font-family: 'Raleway-Bold';
 }
 
 h2{
     color: black;
-    font-family: 'Raleway-Bold', Impact, Arial;
 }
 
 p{
@@ -169,7 +153,6 @@ p{
 
 a{
     text-decoration: none;
-    font-family: 'Raleway';
     color: black;
 }
 a:hover{
@@ -180,6 +163,10 @@ a:active{
 }
 
 
-#grey_star{
+.grey_star {
     color: #D9D9D9;
 }
+
+/* .image_{
+    background-image: url("images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+} */
