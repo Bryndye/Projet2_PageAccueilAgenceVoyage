@@ -21,7 +21,7 @@
         <header>
             <img id = "logo" src="images/Images_Booki/logo/Booki.png" alt="logo Booki">
             <nav>
-                <a href="#hebergement">Hébergements</a>
+                <a href="#bloc_hebergements">Hébergements</a>
                 <a href="#bloc_activites">Activités</a>
             </nav>
         </header>
@@ -32,15 +32,15 @@
                 <p>En plein centre-ville ou en pleine nature</p>
 
                 <form class="bar_recherche"><!--barre de recherche-->
-                    <i id="icon_looking" class="fa-solid fa-location-dot"></i>
-                    <input placeholder="Marseille, France">
+                    <span id="icon_looking"><i class="fa-solid fa-location-dot"></i></span>
+                    <input value="Marseille, France">
                     <button type = "button">Rechercher</button>
                 </form>
 
                 <div class="filter_bar">
                     <h2>Filtres</h2>
                     <div id = "bloc_butons_filtre">
-                        <button type = "button" class="filtre"><i class="fa-solid fa-money-bill-wave"></i> Economique</button>
+                        <button type = "button" class="filtre"><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
                         <button type = "button" class="filtre"><i class="fa-solid fa-person"></i> Familial</button>
                         <button type = "button" class="filtre"><i class="fa-solid fa-heart"></i> Romantique</button>
                         <button type = "button" class="filtre"><i class="fa-solid fa-dog"></i> Animaux autorisés</button> 
@@ -52,57 +52,115 @@
 
             </section>
 
-        <section id = "hebergement">
-            <div> <!--hebergement marseille-->
+        <section id = "bloc_hebergements">
+            <div id ="hebergements_Marseille"> <!--hebergement marseille-->
                 <h1>Hébergements à Marseille</h1>
 
-                <div id = "bloc_hebergement"> <!--Bloc hebergements-->
+                <div id = "grid_hebergements"> <!--Bloc hebergements-->
                     <div class = "raw_1">
                         <article class="card">
                             <figure>
+                                <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
                                 <figcaption>
                                     <h2>Aubger La Cannebière</h2>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="grey_star"><i class="fa-solid fa-star"></i></span>
+                                    </div>
                                 </figcaption>
-                            </figure>
-                            <!-- <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
-                            <div>
-                                <h3>Aubger La Cannebière</h3>
-                                <p>Nuit à partir de 25€</p>
-                                <div>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div> -->
+                            </figure>                       
                         </article>
-                        
+                        <article class="card">
+                            <figure>
+                                <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
+                                <figcaption>
+                                    <h2>Aubger La Cannebière</h2>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="grey_star"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </figcaption>
+                            </figure>                       
+                        </article>    
+                        <article class="card">
+                            <figure>
+                                <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
+                                <figcaption>
+                                    <h2>Aubger La Cannebière</h2>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="grey_star"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </figcaption>
+                            </figure>                       
+                        </article>                
                     </div>
-                    <div class = "raw_2">
-                        <!-- <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
-                        <div>
-                            <h3>Aubger La Cannebière</h3>
-                            <p>Nuit à partir de 25€</p>
-                            <div>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div> -->
+                    <div class = "raw_1">
+                        <article class="card">
+                            <figure>
+                                <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
+                                <figcaption>
+                                    <h2>Aubger La Cannebière</h2>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="grey_star"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </figcaption>
+                            </figure>                       
+                        </article>
+                        <article class="card">
+                            <figure>
+                                <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
+                                <figcaption>
+                                    <h2>Aubger La Cannebière</h2>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="grey_star"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </figcaption>
+                            </figure>                       
+                        </article>    
+                        <article class="card">
+                            <figure>
+                                <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
+                                <figcaption>
+                                    <h2>Aubger La Cannebière</h2>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="grey_star"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </figcaption>
+                            </figure>                       
+                        </article>                
                     </div>
                 </div>
 
                 <p>Afficher plus</p>
             </div>
 
-            <aside id = "bloc_hebergement_populaire"><!--hebergement populaire-->
+            <aside id = "hebergements_populaire"><!--hebergement populaire-->
                 <h2>Les plus populaires</h2>
                 <i class="fa-solid fa-chart-line"></i>
                 <!--Liste bloc hebergements-->
-                <section>
+                <div>
                     <div class = "card">
                         <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
                         <div>
@@ -117,19 +175,19 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </aside>
 
         </section>
 
         <section id = "bloc_activites"> <!--activites populaires-->
             <h1>Activités à Marseilles</h1>
-            <section>
+            <div>
                 <div class = "activite">
                     <img src="images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="img appart">
                     <h3>Aubger La Cannebière</h3>
                 </div>
-            </section>
+            </div>
         </section>
 
         <footer>

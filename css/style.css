@@ -1,9 +1,8 @@
 body{
-    background-color: #F2F2F2;
-    padding : 10px 30px 0 30px;
+    background-color: white;
+    padding : 0 30px 0 30px;
     font-family: 'Raleway', sans-serif;
 }
-
 
 header{
     height: 100px;
@@ -12,36 +11,53 @@ header{
     align-items: center;
 }
 
+
+
 nav{
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 15%;
     margin-right: 30px;
 }
+nav a:hover{
+    border-top: 10px solid #0065FC ;
+}
+nav a:active{
+    color: #0065FC;
+}
 
-
-
+.recherche{
+    margin-bottom: 37px;
+}
 .bar_recherche{
     height: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.bar_recherche i{
-    height: 100%;
+#icon_looking{
+    height: 50px;
     width: 50px;
     background-color: #D9D9D9;
-    border-radius: 20px 0 0 20px;
+    border-radius: 15px 0px 0px 15px;
     border-width: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#icon_looking i{
+    color: black;
 }
 .bar_recherche input{
-    height: 100%;
     font-family: 'Raleway';
+    height: 100%;
 }
 .bar_recherche button{
     color: white;
     background-color: #0065FC;
-    font-family: 'Raleway-Bold';
+    font-family: 'Raleway';
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
     padding: 15px 15px;
@@ -51,61 +67,98 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 20px;
 }
-
 #bloc_butons_filtre{
     display: flex;
     flex-direction: row;
 }
-
 .filtre{
     width: auto;
     height: 50px;
-    border-radius: 30px;
     margin-left: 20px;
+    /*padding: 20px 20px;*/
+    border-radius: 25px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     border-style: solid;
     border-color: #D9D9D9;
+    background-color: white;
+    font-family: 'Raleway';
+    font-size: 17px;
+
     /*background-color: #DEEBFF; quand active*/
 }
 .filter_bar i{
+    height: 22px;
+    width: 22px;
     color: #0065FC;
 }
-
-#hebergement{
-    background-color: blue;
+.filtre:hover{
+    background-color: #DEEBFF;
 }
 
-#bloc_hebergement{
-    width: auto;
+
+
+#bloc_hebergements{   
+    display: flex;
+    justify-content: space-between;    
+}
+#hebergements_Marseille:nth-child(1){
+    flex: 2;
+}
+#hebergements_Marseille{
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+    padding: 40px 40px 40px 40px;
+}
+#hebergements_populaire{
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 40px 40px;
+}
+#hebergements_populaire:nth-child(2){
+    flex: 1;
+}
+#grid_hebergements{
     margin: auto 10px auto 10px;
-    background-color: cyan;
+    /*background-color: cyan;*/
+}
+.raw_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 250px;
+    margin-bottom: 40px;
 }
 
-.card {
+
+.card{
     width: 300px;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 20px;
-    background-color: #DEEBFF;
+    background-color: white;
 }
-
 .card img{
-    object-fit: fill;
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 #bloc_hebergement_populaire{
-    background-color: blueviolet;
+    background-color: #F2F2F2;
 }
+
 
 
 #bloc_activites{
-    background-color: rosybrown;
+    background-color: #F2F2F2;
 }
-
 .activite{
     width: 25%;
     /* Add shadows to create the "card" effect */
@@ -114,12 +167,13 @@ nav{
     background-color: #DEEBFF;
 }
 
+
+
 footer{
-    background-color: grey;
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
 }
-
 .colonne_footer{
     background-color: rgba(0,0,0,0.2);
     display: flex;
@@ -155,15 +209,12 @@ a{
     text-decoration: none;
     color: black;
 }
-a:hover{
-    border-top: 10px solid #0065FC ;
-}
-a:active{
+
+
+.fa-solid{
     color: #0065FC;
 }
-
-
-.grey_star {
+.grey_star{
     color: #D9D9D9;
 }
 
