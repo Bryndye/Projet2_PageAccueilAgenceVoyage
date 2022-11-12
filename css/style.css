@@ -2,6 +2,8 @@ body{
     background-color: white;
     padding : 0 30px 0 30px;
     font-family: 'Raleway', sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 
@@ -15,7 +17,9 @@ header{
     align-items: center;
 }
 
-
+/* ---------------------------------------------------
+  header nav
+----------------------------------------------------- */
 nav{
     height: 100%;
     display: flex;
@@ -26,14 +30,19 @@ nav{
 }
 nav a{
     height: 100%;
+    line-height: 100px;
 }
 nav a:hover{
-    border-top: 10px solid #0065FC ;
+    border-top: 5px solid #0065FC ;
+    line-height: 92px !important;
 }
 nav a:active{
     color: #0065FC;
 }
 
+/* ---------------------------------------------------
+  header Recherche
+----------------------------------------------------- */
 .recherche{
     margin-bottom: 37px;
 }
@@ -68,23 +77,27 @@ nav a:active{
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
     padding: 15px 15px;
+    cursor: pointer;
 }
 
+/* ---------------------------------------------------
+  header filtre bar
+----------------------------------------------------- */
 .filter_bar{
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 40px;
     margin-top: 20px;
 }
 #bloc_butons_filtre{
     display: flex;
     flex-direction: row;
+    gap: 30px;
 }
 .filtre{
     width: auto;
     height: 50px;
-    margin-left: 20px;
-    /*padding: 20px 20px;*/
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -108,11 +121,12 @@ nav a:active{
 
 
 /* ---------------------------------------------------
-  HEBERGEMENT
+  HEBERGEMENT A MARSEILLE
 ----------------------------------------------------- */
 #bloc_hebergements{   
     display: flex;
     justify-content: space-between; 
+    gap: 40px;
 }
 #hebergements_Marseille:nth-child(1){
     flex: 2;
@@ -121,6 +135,64 @@ nav a:active{
     background-color: #F2F2F2;
     border-radius: 20px 20px 20px 20px;
     padding: 40px 40px 40px 40px;
+}
+#grid_hebergements{
+    margin: auto 10px auto 10px;
+    /*background-color: cyan;*/
+}
+.raw{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 250px;
+    gap: 30px;   
+}
+
+/* ---------------------------------------------------
+  hebergement card 
+----------------------------------------------------- */
+.card{
+    height: 190px;
+    width: 250px;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.card img{
+    object-fit: cover;
+    justify-self: center;
+    width: 100%;
+    height: 120px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card figcaption{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.card h2, .card p, .card div{
+    margin: 0;
+}
+
+/* ---------------------------------------------------
+  HEBERGEMENT POPULAIRE
+----------------------------------------------------- */
+#column{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#bloc_hebergement_populaire{
+    background-color: #F2F2F2;
 }
 #hebergements_populaire{
     background-color: #F2F2F2;
@@ -132,23 +204,69 @@ nav a:active{
 #hebergements_populaire:nth-child(2){
     flex: 1;
 }
-#grid_hebergements{
-    margin: auto 10px auto 10px;
-    /*background-color: cyan;*/
+#line_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.raw_1{
+#line_title i{
+    height: 18px;
+}
+
+/* ---------------------------------------------------
+  HEBERGEMENT POP CARD
+----------------------------------------------------- */
+.card_pop{
+    height: 144px;
+    width: 343px;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    cursor: pointer;
+}
+.card_pop_description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card_pop img{
+    object-fit: cover;
+    justify-self: left;
+    /*width: 100%;*/
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.card_pop figcaption{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/* ---------------------------------------------------
+  ACTIVITES
+----------------------------------------------------- */
+#bloc_activites{
+   /* background-color: #F2F2F2;*/
+   width: 100%;
+   margin-top: 60px;
+   margin-bottom: 60px;
+}
+#activite_row{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 250px;
-    gap: 10px;   
-
 }
-
-
-.card{
-    height: 190px;
-    width: 250px;
+.card_activite{
+    height: 445px;
+    width: 302px;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 20px;
@@ -156,39 +274,17 @@ nav a:active{
     background-color: white;
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
 }
-.card img{
+.card_activite img{
     object-fit: cover;
     justify-self: center;
-    width: 100%;
-    height: 120px;
+    /*width: 100%;*/
+    height: 394px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-.card figcaption{
-    display: flex;
-    flex-direction: column;
-}
-
-#bloc_hebergement_populaire{
-    background-color: #F2F2F2;
-}
-
-
-/* ---------------------------------------------------
-  ACTIVITES
------------------------------------------------------ */
-#bloc_activites{
-    background-color: #F2F2F2;
-}
-.activite{
-    width: 25%;
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 20px;
-    background-color: #DEEBFF;
-}
-
 
 /* ---------------------------------------------------
   FOOTER
@@ -230,6 +326,7 @@ h2{
 
 p{
     color: black;
+    font-size: 14px;
 }
 
 a{
@@ -249,9 +346,17 @@ a{
     color: #D9D9D9;
 }
 
+#indicator{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border: 1px solid black ;
+    border-radius: 50%;
+}
+/*
 h1, h2, h3, h4, h5, p, span, label, img {
     margin: 0px;
-  }
+  }*/
 /* .image_{
     background-image: url("images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 } */
