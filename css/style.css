@@ -242,8 +242,8 @@ nav a:active{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-.card_pop figcaption{
-    height: 100%;
+.card_description{
+    height: 70px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -317,6 +317,7 @@ footer{
 ----------------------------------------------------- */
 h1{
     color : black;
+    font-weight: bold;
 }
 
 h2{
