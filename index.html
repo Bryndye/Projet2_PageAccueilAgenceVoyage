@@ -3,12 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>Page Accueil</title>
+        
 
         <!--https://fontawesome.com/kits/9716f2641e/use?welcome=yes-->
         <script src="https://kit.fontawesome.com/9716f2641e.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> <!--CDN-->
     </head>
     <!--Nous avons convenu avec le designer UI d’utiliser 992 px et 768 px
@@ -40,16 +42,14 @@
                 <div class="filter_bar">
                     <h2>Filtres</h2>
                     <div id = "bloc_butons_filtre">
-                        <button type = "button" class="filtre"><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
-                        <button type = "button" class="filtre"><i class="fa-solid fa-person"></i> Familial</button>
-                        <button type = "button" class="filtre"><i class="fa-solid fa-heart"></i> Romantique</button>
-                        <button type = "button" class="filtre"><i class="fa-solid fa-dog"></i> Animaux autorisés</button> 
+                        <button type = "button" class="filtre"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                        <button type = "button" class="filtre"><i class="fa-solid fa-person"></i>Familial</button>
+                        <button type = "button" class="filtre"><i class="fa-solid fa-heart"></i>Romantique</button>
+                        <button type = "button" class="filtre"><i class="fa-solid fa-dog"></i>Animaux autorisés</button> 
                     </div>          
                 </div>
-
             
-                <p><span id="indicator" ><i class="fa-solid fa-info"></i></span>Plus de 500 logements sont disponibles dans cette ville</p>
-
+                <p><i id="indicator" class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
             </section>
 
         <section id = "bloc_hebergements">
@@ -160,7 +160,7 @@
                     </div>
                 </div>
 
-                <p>Afficher plus</p>
+                <h2>Afficher plus</h2>
             </div>
 
             <aside id = "hebergements_populaire"><!--hebergement populaire-->
@@ -172,14 +172,16 @@
                 <!--Liste bloc hebergements-->
                 <div id="column">
                     <div class = "card_pop">
-                        <img src="images/Images_Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="img appart">
+                        <div class="card_image_container">
+                            <img src="images/Images_Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="img appart">
+                        </div>
                         <div class="card_pop_description">
                             <div>
                                 <h2>Hôtel Le soleil du matin</h2>
                                 <p>Nuit à partir de 25€</p>
                             </div>
                             
-                            <div class="stars_content">
+                            <div class="stars_content_pop">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -189,14 +191,16 @@
                         </div>
                     </div>
                     <div class = "card_pop">
-                        <img src="images/Images_Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="img appart">
+                        <div class="card_image_container">
+                            <img src="images/Images_Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="img appart">
+                        </div>
                         <div class="card_pop_description">
                             <div>
                                 <h2>Hôtel Le soleil du matin</h2>
                                 <p>Nuit à partir de 25€</p>
                             </div>
                             
-                            <div class="stars_content">
+                            <div class="stars_content_pop">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -206,14 +210,16 @@
                         </div>
                     </div>
                     <div class = "card_pop">
-                        <img src="images/Images_Booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="img appart">
+                        <div class="card_image_container">
+                            <img src="images/Images_Booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="img appart">
+                        </div>
                         <div class="card_pop_description">
                             <div>
                                 <h2>Hôtel Le soleil du matin</h2>
                                 <p>Nuit à partir de 25€</p>
                             </div>
                             
-                            <div class="stars_content">
+                            <div class="stars_content_pop">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -231,19 +237,27 @@
             <h1>Activités à Marseilles</h1>
             <div id="activite_row">
                 <div class = "card_activite">
-                    <img src="images/Images_Booki/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="img activite">
+                    <div class = "card_image_container_activite">
+                        <img src="images/Images_Booki/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="img activite">
+                    </div>
                     <h2>Vieux Port</h2>
                 </div>
                 <div class = "card_activite">
-                    <img src="images/Images_Booki/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="img activite">
+                    <div class="card_image_container_activite">
+                        <img src="images/Images_Booki/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="img activite">
+                    </div>
                     <h2>Fort de Pomègues</h2>
                 </div>
                 <div class = "card_activite">
-                    <img src="images/Images_Booki/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="img activite">
+                    <div class="card_image_container_activite">
+                        <img src="images/Images_Booki/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="img activite">
+                    </div>
                     <h2>Parc National des Calanques</h2>
                 </div>
                 <div class = "card_activite">
-                    <img src="images/Images_Booki/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="img activite">
+                    <div class="card_image_container_activite">
+                        <img src="images/Images_Booki/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="img activite">
+                    </div>
                     <h2>Notre-Dame-de-la-Garde</h2>
                 </div>
             </div>

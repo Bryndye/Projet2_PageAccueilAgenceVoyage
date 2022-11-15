@@ -30,11 +30,13 @@ nav{
 }
 nav a{
     height: 100%;
-    line-height: 100px;
+    /* line-height: 100px; */
+    padding-top: 50px;
 }
 nav a:hover{
     border-top: 5px solid #0065FC ;
-    line-height: 92px !important;
+    /* line-height: 92px !important; */
+    padding-top: 45px;
 }
 nav a:active{
     color: #0065FC;
@@ -57,7 +59,7 @@ nav a:active{
     width: 50px;
     background-color: #D9D9D9;
     border-radius: 15px 0px 0px 15px;
-    border-width: 5px;
+    /* border-width: 5px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,17 +69,29 @@ nav a:active{
 }
 .bar_recherche input{
     font-family: 'Raleway';
-    height: 100%;
-    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 18px;
+    height: 44px;
+    border-style: solid;
+    border-color: #D9D9D9;
 }
 .bar_recherche button{
+    font-family: 'Raleway';
+    font-weight: bold;
     color: white;
     background-color: #0065FC;
-    font-family: 'Raleway';
-    border: 1px solid #0065FC;
+    border: 2px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
     padding: 15px 15px;
     cursor: pointer;
+}
+
+#indicator{
+    padding: 7px 12px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    color: #0065FC;
 }
 
 /* ---------------------------------------------------
@@ -98,14 +112,18 @@ nav a:active{
 .filtre{
     width: auto;
     height: 50px;
-    border-radius: 25px;
+    padding: 20px 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
+    border-radius: 25px;
     border-style: solid;
     border-color: #D9D9D9;
     background-color: white;
+    
     font-family: 'Raleway';
+    font-weight: bold;
     font-size: 17px;
 
     /*background-color: #DEEBFF; quand active*/
@@ -137,7 +155,7 @@ nav a:active{
     padding: 40px 40px 40px 40px;
 }
 #grid_hebergements{
-    margin: auto 10px auto 10px;
+    /* margin: auto 10px auto 10px; */
     /*background-color: cyan;*/
 }
 .raw{
@@ -237,10 +255,13 @@ nav a:active{
 .card_pop img{
     object-fit: cover;
     justify-self: left;
-    /*width: 100%;*/
+    width: 100%;
     height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+.card_image_container{
+    width: 150px;
 }
 .card_description{
     height: 70px;
@@ -249,6 +270,27 @@ nav a:active{
     align-items: flex-start;
     justify-content: space-between;
 }
+/* ---------------------------------------------------
+    Stars on card
+----------------------------------------------------- */
+.stars_content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.stars_content_pop{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.fa-solid{
+    color: #0065FC;
+}
+.grey_star{
+    color: #D9D9D9;
+}
+
+
 /* ---------------------------------------------------
   ACTIVITES
 ----------------------------------------------------- */
@@ -266,58 +308,65 @@ nav a:active{
 }
 .card_activite{
     height: 445px;
-    width: 302px;
+    width: 300px;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 20px;
     padding: 5px;
     background-color: white;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    gap: 15px;
+    /* gap: 15px; */
     cursor: pointer;
 }
 .card_activite img{
     object-fit: cover;
     justify-self: center;
-    /*width: 100%;*/
-    height: 394px;
+    width: 100%;
+    height: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
+.card_image_container_activite{
+    height: 400px;
+}
 /* ---------------------------------------------------
   FOOTER
 ----------------------------------------------------- */
 footer{
     background-color: #F2F2F2;
+    height: 200px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 .colonne_footer{
-    background-color: rgba(0,0,0,0.2);
+    height: 80%;
+    /* background-color: rgba(0,0,0,0.2); */
     display: flex;
     flex-direction: column;
-    margin-right: 20%;
+    gap: 20px;
+    /* margin-right: 20%; */
 }
 .links{
-    margin-top: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* margin-top: 5px; */
 }
 
-
-
-#logo{
-    width: 61px;
-}
 
 
 
 /* ---------------------------------------------------
-  LE RESTE
+LE RESTE
 ----------------------------------------------------- */
 h1{
     color : black;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 h2{
@@ -335,29 +384,16 @@ a{
     color: black;
 }
 
-.stars_content{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.fa-solid{
-    color: #0065FC;
-}
-.grey_star{
-    color: #D9D9D9;
+
+
+#logo{
+    width: 61px;
 }
 
-#indicator{
-    height: 30px;
-    width: 30px;
-    background-color: white;
-    border: 1px solid black ;
-    border-radius: 50%;
-}
 /*
 h1, h2, h3, h4, h5, p, span, label, img {
     margin: 0px;
-  }*/
+}*/
 /* .image_{
     background-image: url("images/Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 } */
