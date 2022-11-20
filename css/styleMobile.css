@@ -2,19 +2,22 @@ body{
     background-color: white;
     /* padding : 0 30px 0 30px; */
     font-family: 'Raleway', sans-serif;
-    max-width: 1400px;
-    margin: 0 auto;
+    max-width: 768px;
 }
 
-
+main{
+    margin: 0 20px;
+}
 /* ---------------------------------------------------
   header
 ----------------------------------------------------- */
 header{
     height: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 30px auto;
 }
 
 /* ---------------------------------------------------
@@ -23,20 +26,19 @@ header{
 nav{
     height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 15%;
-    margin-right: 30px;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0;
 }
 nav a{
-    height: 100%;
-    line-height: 100px;
-    /* padding-top: 50px; */
+    height: 50px;
+    width: 50%;
+    text-align: center;
+    border-bottom: 5px solid #F2F2F2 ;
 }
 nav a:hover{
-    border-top: 5px solid #0065FC ;
-    /* line-height: 92px !important; */
-    /* padding-top: 45px; */
+    border-bottom: 5px solid #0065FC ;
     color: #0065FC;
 }
 nav a:active{
@@ -86,6 +88,9 @@ nav a:active{
     padding: 15px 15px;
     cursor: pointer;
 }
+.bar_recherche button i{
+    color: white;
+}
 
 #recherche_disponibilite{
     display: flex;
@@ -108,23 +113,21 @@ nav a:active{
 ----------------------------------------------------- */
 .filter_bar{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
+    flex-direction: column;
+    align-items: flex-start;
     margin-top: 20px;
 }
 #bloc_butons_filtre{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 30px;
 }
 .filtre{
-    width: auto;
+    width: 160px;
     height: 50px;
-    padding: 20px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     
     border-radius: 25px;
     border-style: solid;
@@ -133,20 +136,21 @@ nav a:active{
     
     font-family: 'Raleway';
     font-weight: bold;
-    /* font-size: 17px; */
 
     /*background-color: #DEEBFF; quand active*/
 }
 .filtre h2{
+    font-size: 12px;
     padding-left: 5px;
 }
 .filter_bar i{
-    height: 22px;
     width: 22px;
     color: #0065FC;
 }
 .filtre:hover{
-    background-color: #DEEBFF;
+    /* background-color: #DEEBFF; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
 }
 
 
@@ -156,25 +160,23 @@ nav a:active{
 #bloc_hebergements{   
     display: flex;
     justify-content: space-between; 
-    gap: 40px;
-}
-#hebergements_Marseille:nth-child(1){
-    flex: 2;
+    flex-direction: column-reverse;
+    /* gap: 40px; */
 }
 #hebergements_Marseille{
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 40px;
+    padding: 20px;
 }
 #grid_hebergements{
-    /* margin: auto 10px auto 10px; */
-    /*background-color: cyan;*/
+    display: flex;
+    flex-direction: column;
+    gap: 30px;   
 }
 .raw{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    height: 250px;
     gap: 30px;   
 }
 
@@ -226,14 +228,11 @@ nav a:active{
 }
 #hebergements_populaire{
     background-color: #F2F2F2;
-    border-radius: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     padding: 40px 40px 40px 40px;
 }
-#hebergements_populaire:nth-child(2){
-    flex: 1;
-}
+
 #line_title{
     display: flex;
     justify-content: space-between;
@@ -253,9 +252,7 @@ nav a:active{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 20px;
     padding: 5px;
-    background-color: white;
-    
-    /* cursor: pointer; */
+    background-color: white;  
 }
 .card_pop a{
     height: 100%;
@@ -316,20 +313,18 @@ nav a:active{
 ----------------------------------------------------- */
 #bloc_activites{
    /* background-color: #F2F2F2;*/
-   width: 100%;
    margin-top: 60px;
    margin-bottom: 60px;
 }
 #activite_row{
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 .card_activite{
-    height: 445px;
-    width: 300px;
-    /* Add shadows to create the "card" effect */
+    height: 200px;
+    width: 330px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 20px;
     background-color: white;
@@ -350,24 +345,26 @@ nav a:active{
     border-top-right-radius: 20px;
 }
 .card_image_container_activite{
-    height: 400px;
+    height: 150px;
 }
 /* ---------------------------------------------------
   FOOTER
 ----------------------------------------------------- */
 footer{
     background-color: #F2F2F2;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.colonne_footer{
-    height: 80%;
-    /* background-color: rgba(0,0,0,0.2); */
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 550px;
+    padding : 30px;
+}
+.colonne_footer{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
     gap: 20px;
     /* margin-right: 20%; */
 }
@@ -387,7 +384,7 @@ LE RESTE
 ----------------------------------------------------- */
 h1{
     color : black;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 h2{
