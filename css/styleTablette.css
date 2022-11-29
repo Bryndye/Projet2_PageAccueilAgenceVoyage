@@ -243,6 +243,7 @@ nav a:active{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
 }
 
 /* ---------------------------------------------------
@@ -328,6 +329,7 @@ nav a:active{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .card_activite{
